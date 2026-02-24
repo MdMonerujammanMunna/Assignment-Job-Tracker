@@ -25,6 +25,24 @@
 </head>
 
 <body class="container mx-auto ">
+    <header class=" mt-[60px]">
+        <h1 class="text-[32px] font-semibold text-blue-950">Job Application Tracker</h1>
+        <div class="grid grid-cols-3 mt-[20px] gap-[16px]">
+            <div class="border border-gray-200 p-[20px]">
+                <p class="text-[14px]">Total</p>
+                <p id="totalCount" class="text-[24px] text-blue-950 font-bold">0</p>
+            </div>
+            <div class="border border-gray-200 p-[20px]">
+                <p class="text-[14px]">Interview</p>
+                <p id="interviewCount" class="text-green-400 font-bold text-[24px]">0</p>
+            </div>
+            <div class="border border-gray-200 p-[20px]">
+                <p class="text-[14px]">Rejected</p>
+                <p id="rejectedCount" class="text-red-400 font-bold text-[24px]">0</p>
+            </div>
+        </div>
+        <hr style="border: 1px solid #e6e7e9;" class="my-[30px]">
+    </header>
 
     <!-- JS link -->
     <script src="function.js"></script>
