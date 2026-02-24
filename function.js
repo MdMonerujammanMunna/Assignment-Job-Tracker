@@ -15,7 +15,22 @@ function calculateCount() {
     const count = allCardSection.children.length;
     totalCount.innerText = count;
     totalJobCount.innerText = count + ' Jobs'
-   
+
+    if (count == 0) {
+        allCardSection.innerHTML = ``
+        allCardSection.innerHTML = `
+         <div class="flex flex-col  items-center border border-[#e6e7e9] rounded justify-center mt-[60px]">
+                <img src="jobs.png" alt="empty" class="mt-[111px]">
+                <p class="text-[20px] font-bold text-blue-950 mt-4">No Jobs Available</p>
+                <p class="text-gray-400 mt-2 mb-[111px]">Check back soon for new job opportunities.</p>
+            </div>
+        `
+        return;
+
+    };
+
+
+
 } calculateCount()
 
 function toggleStyle(id) {
