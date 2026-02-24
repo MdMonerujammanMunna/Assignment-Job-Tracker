@@ -43,6 +43,22 @@
         </div>
         <hr style="border: 1px solid #e6e7e9;" class="my-[30px]">
     </header>
+    <main class="">
+        <div class="flex justify-between">
+            <p class="text-[20px] text-blue-950 font-semibold">Available Jobs</p>
+            <p style="color: gray;" id="jobCount"></p>
+        </div>
+        <div class="mt-[24px] flex gap-2 ">
+            <button onclick="toggleStyle('allBtn')" id="allBtn"
+                class="py-[10px] px-[32px] font-bold text-white rounded bg-black"
+                style="border: 1px solid #e6e7e9;">All</button>
+            <button onclick="toggleStyle('interviewBtn')" id="interviewBtn" style="border: 1px solid #e6e7e9;"
+                class="px-[14px] rounded py-[10px]">Interview</button>
+            <button onclick="toggleStyle('rejectedBtn')" id="rejectedBtn" style="border: 1px solid #e6e7e9;"
+                class="px-[14px] rounded py-[10px]">Rejected</button>
+        </div>
+
+    </main>
 
     <!-- JS link -->
     <script src="function.js"></script>
